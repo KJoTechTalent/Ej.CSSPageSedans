@@ -24,6 +24,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 /* MEDIDAS DE LAS CARDS */
@@ -34,6 +35,12 @@ body{
     width: 300px;
     height: 500px;
 }
+.card:hover {
+    width: 400px;
+    height: 600px;
+}
+  
+
 
 /* CONTAINERS CARDS */
 .containerSedans{
