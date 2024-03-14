@@ -14,8 +14,7 @@
 
 
 body{
-    margin-top: 100px;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -25,6 +24,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 /* MEDIDAS DE LAS CARDS */
@@ -35,12 +35,6 @@ body{
     width: 300px;
     height: 500px;
 }
-.card:hover {
-    width: 400px;
-    height: 600px;
-}
-  
-
 
 /* CONTAINERS CARDS */
 .containerSedans{
@@ -101,4 +95,41 @@ background-color: var(--colorAzOscuro);
 .fontBig{
     font-family: var(--BigShouldersDisplayFont);
     font-size: 25px;
+}
+@media only screen and (min-width:0px) and (max-width:700px){
+    
+    body{
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #mainsMainContainer{
+        flex-direction: column;
+        height: 95%;
+    }
+    .card{
+        width: 90%;
+    }
+    .containerLuxury{
+        margin-bottom: 40px;
+    }
+    :hover{
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+}
+}
+
+@media screen and (min-width:701px){
+    .card:hover {
+        width: 450px;
+        height: 500px;
+    } 
+    
+    .card:hover ~ .card {
+        width: 250px;
+    }
 }
